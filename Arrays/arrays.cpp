@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 const int ROWS = 3;
@@ -8,16 +8,20 @@ void FillRand(int arr[], const int n, int minRand = 0, int maxRand = 100);
 void FillRand(double arr[], const int n, int after_comma, int minRand = 0, int maxRand = 100);
 void FillRand(int arr[][COLS], const int ROWS,const int COLS);
 
-
 void Print(int arr[], const int n);
 void Print(double arr[], const int n);
 void Print(int arr[ROWS][COLS], const int ROWS, const int COLS);
 
 void Sort(int arr[], const int n);
+
 int Sum(int arr[], const int n);
+
 double Avarage(int arr[], const int n);
+
 int minValueIn(int arr[], const int n);
+
 int maxValueIn(int arr[], const int n);
+
 void main()
 {
 	setlocale(LC_ALL, "");
@@ -28,8 +32,8 @@ void main()
 	Print(arr, n);
 	Sort(arr, n);
 	Print(arr, n);
-	cout << "Ñóììà ýëåìåíòîâ ìàññèâà: " << Sum(arr, n) << endl;
-	cout << "Ñðåäíåå àðèôìåòè÷åñêîå ìàññèâà: " << Avarage(arr, n)<<endl;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Sum(arr, n) << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Avarage(arr, n)<<endl;
 
 	const int D_SIZE = 8;
 	double d_arr[D_SIZE];
